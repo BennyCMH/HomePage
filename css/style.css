@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #DBE2EF;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.6rem
+}
+
+section, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 5rem;    
+}
+
+.btn {
+    background-color: #71C9CE;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section Start */
+
+#hero_section {
+    align-items: flex-end;
+    background-color: #3F72AF;
+    color: #232b2b;
+    height: 100vh;
+    color: white;
+}
+
+#hero_section > div {
+    display: flex;
+    gap: 3rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#hero_section > div > * {
+    flex-basis: 0;
+}
+
+#hero_section p {
+    font-size: 2.5rem;
+}
+
+.profile_image {
+    height: 400px;
+    border-radius: 50%;
+}
+
+/* Hero Section End */
+
+/* Resume Section Start */
+
+#resume {
+    text-align: center;
+    color: #112D4E;
+}
+
+/* Resume Section End */
+
+/* Previous Work Start */
+
+#previous_work {
+    color: #112D4E;
+}
+
+.card_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    border: 1px solid #112D4E;
+    flex-basis: 30%;
+    flex-basis: 250px;
+    padding: 1rem;
+    text-align: left;
+}
+
+.card img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.project_title {
+    font-size: 2rem;
+}
+
+.project_desc {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+/* Previous Work End */
+
+/* Contact Start */
+
+#contact_me .contact_container {
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.contact_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-basis: 100px;
+    font-size: 1.6rem;
+}
+
+/* Contact End */
+
+/* Footer Start */
+
+footer {
+    background-color: #3F72AF;
+    color: white;
+    font-size: 1.4rem;
+}
+
+/* Footer End */
+
+@media (max-width: 1000px) {
+    /* Previous Work Start */
+
+    .card_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .card {
+        min-width: 300px;
+        align-items: center;
+    }
+
+    /* Previous Work End */
+}
+
+@media (max-width: 800px) {
+    /* Hero Section Start */
+    h1 {
+        font-size: 4rem;
+    }
+
+    #hero_section {
+        align-items: center;
+    }
+
+    #hero_section > div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #hero_section p {
+        font-size: 1.6rem;
+    }
+
+    /* Hero Section End */
+}
